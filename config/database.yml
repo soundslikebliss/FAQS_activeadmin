@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: faqs_site_development
+
+test:
+  adapter: postgresql
+  database: faqs_site_test
