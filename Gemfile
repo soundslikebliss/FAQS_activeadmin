@@ -8,4 +8,5 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
 
