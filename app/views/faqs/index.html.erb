@@ -1,5 +1,19 @@
 <h1>Listing faqs</h1>
 
+
+
+<% @faqs.each do |faq| %>
+  <div class="well">
+    <h4><em><strong><%= faq.title %></strong></em></h4>
+    <br>
+    <%= faq.body %>
+    <br>
+    <br>
+  </div>
+<% end %>
+
+
+
 <table>
   <thead>
     <tr>
