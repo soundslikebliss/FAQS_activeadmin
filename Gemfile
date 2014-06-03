@@ -9,4 +9,5 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'active_admin_editor'
 
