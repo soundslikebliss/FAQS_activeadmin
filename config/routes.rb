@@ -1,8 +1,26 @@
 Rails.application.routes.draw do
+  get 'category/new'
+
+  get 'category/create'
+
+  get 'category/update'
+
+  get 'category/edit'
+
+  get 'category/destroy'
+
+  get 'category/show'
+
+  get 'category/index'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   devise_for :users
+  
+  resources :categories
   resources :faqs
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

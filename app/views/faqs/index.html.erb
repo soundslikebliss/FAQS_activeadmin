@@ -6,9 +6,17 @@
 <br>
 <br>
 <hr>
-<br>
-<br>
 
+<div id="center_search">
+<%= form_tag faqs_path, method: :get do %>
+  <p>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+</div>
+<br>
+<br>
 
 <% @faqs.each do |faq| %>
   <div class="well">
@@ -20,6 +28,7 @@
   </div>
 <% end %>
 
-
+<button id="click">Click me</button>
+<br>
 <br>
 

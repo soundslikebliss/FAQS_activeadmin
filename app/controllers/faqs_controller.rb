@@ -53,6 +53,6 @@ class FaqsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def faq_params
-      params.require(:faq).permit(:title, :body)
+      params.require(:faq).permit(:title, :body, :category_id)
     end
 end
