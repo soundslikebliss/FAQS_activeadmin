@@ -5,6 +5,6 @@ $(document).ready ->
 	$("#click").click ->
 	  $("html, body").animate
 	    scrollTop: $(".well").offset().top
-	  , 750
+	  , 500
 	  return
 
