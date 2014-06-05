@@ -1,28 +1,16 @@
-== README
+=== FAQS app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An app/site template for serving up content such as FAQs or other post-ishy type things. Columnar output on the page, sorted by category. ActiveAdmin on the back for a sweet CMS feel. 
 
-Things you may want to cover:
+- Devise
+- ActiveAdmin
+- Postgres
+- Bootstrap
 
-* Ruby version
+Originally created for Switchboard during my internship days.
 
-* System dependencies
+thanks guys!!
 
-* Configuration
+switchboardhq.com
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+-2014
