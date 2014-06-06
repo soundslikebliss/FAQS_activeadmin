@@ -1,7 +1,7 @@
 <br>
 <h1 class="center red big">FAQ</h1>
 <br>
-<hr>
+<a><p id="searchLink">search</p></a>
 
 
 <div id="center_search">
@@ -13,22 +13,41 @@
 
 <br>
 <br>
-<h4 class ="left">GENERAL</h4>
-<br>
 <br>
 <br>
 <br>
 
-
-
-<% @faqs.each do |faq| %>
-<div class="well">
-    <h4><em><strong><%= link_to "#{faq.title}", faq %></strong></em></h4>
+<div class="row">
+  <div class="col-md-6">
     <br>
-<!--     <%= raw faq.body %> -->
+    <h4 class ="center">GENERAL</h4>
     <br>
+    <% @general_faqs.each do |faq| %>
+    <div class="well">
+        <h4><em><strong><%= link_to "#{faq.title}", faq %></strong></em></h4>
+        <br>
+    <!--     <%= raw faq.body %> -->
+        <br>
+      </div>
+    <% end %>
+    </div>
+
+  <div class="col-md-6">
+    <br>
+    <h4 class ="center">ADMIN</h4>
+    <br>
+    <% @admin_faqs.each do |faq| %>
+    <div class="well">
+        <h4><em><strong><%= link_to "#{faq.title}", faq %></strong></em></h4>
+        <br>
+    <!--     <%= raw faq.body %> -->
+        <br>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
+
+
 
 <button id="click" class="center">Go up!</button>
 <br>

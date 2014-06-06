@@ -8,6 +8,8 @@ class FaqsController < ApplicationController
     else
       Faq.all
     end
+    @general_faqs = Faq.where(:category_id => 1)
+    @admin_faqs = Faq.where(:category_id => 2)
   end
 
   # GET /faqs/1
