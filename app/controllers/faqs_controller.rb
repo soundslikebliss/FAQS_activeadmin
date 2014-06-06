@@ -3,7 +3,11 @@ class FaqsController < ApplicationController
 
   # GET /faqs
   def index
-    @faqs = Faq.all
+    @faqs = if !params[:query].blank?
+      Faq.faq_search(params[:query])
+    else
+      Faq.all
+    end
   end
 
   # GET /faqs/1

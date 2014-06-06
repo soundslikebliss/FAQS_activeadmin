@@ -7,4 +7,5 @@ $(document).ready ->
 	    scrollTop: $(".well").offset().top
 	  , 500
 	  return
+	  $('#center_search')
 

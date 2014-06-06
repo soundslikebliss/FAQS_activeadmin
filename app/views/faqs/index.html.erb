@@ -1,29 +1,31 @@
 <br>
 <h1 class="center red big">FAQ</h1>
 <br>
+<hr>
+
+
+<div id="center_search">
+<%= form_tag faqs_path, method: :get do %>
+    <%= text_field_tag :query, params[:query] %>
+    <%= submit_tag "Search", name: nil %>
+<% end %>
+</div>
+
+<br>
 <br>
 <h4 class ="left">GENERAL</h4>
 <br>
 <br>
-<hr>
+<br>
+<br>
 
-<div id="center_search">
-<%= form_tag faqs_path, method: :get do %>
-  <p>
-    <%= text_field_tag :query, params[:query] %>
-    <%= submit_tag "Search", name: nil %>
-  </p>
-<% end %>
-</div>
-<br>
-<br>
+
 
 <% @faqs.each do |faq| %>
-  <div class="well">
-    <h4><em><strong><%= faq.title %></strong></em></h4>
+<div class="well">
+    <h4><em><strong><%= link_to "#{faq.title}", faq %></strong></em></h4>
     <br>
-    <%= raw faq.body %>
-    <br>
+<!--     <%= raw faq.body %> -->
     <br>
   </div>
 <% end %>

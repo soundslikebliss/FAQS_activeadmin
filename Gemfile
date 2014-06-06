@@ -11,4 +11,4 @@ gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'active_admin_editor'
 gem 'acts-as-taggable-on'
-
+gem 'pg_search'
